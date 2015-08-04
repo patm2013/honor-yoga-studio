@@ -1,0 +1,426 @@
+@@ -0,0 +1,425 @@
+/*GENERAL PAGE AND HEADER */
+body {
+	background-color: #FFF;
+}
+.page {
+	width: 100%;
+	padding: 2rem 0;
+}
+
+
+
+.container {
+	height: inherit;
+}
+
+.bg-accent {
+	background-color: #73889d;
+	color: #FFF;
+	position: relative;
+	padding: 4rem 0;
+}
+
+#w2eInner {
+	background-color: rgba(50, 50, 50, 0.77);
+	padding: 1%;
+	color: #FFF;
+}
+.transparent {
+	opacity: 0;
+}
+
+/*navbar positioning*/
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	z-index: 10000;
+	box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.24);
+	background-color: #FFF;
+	bottom: inherit;
+}
+#nav__inner {
+	width: 95%;
+	margin: auto;
+	max-width: 960px;
+}
+
+/*menu items*/
+#nav__inner a {
+	color: #000;
+	position: relative;
+	text-decoration: none;
+	padding: 1.1rem 2%;
+	display: block;
+}
+#nav__inner #headerBullet a {
+	color: #000;
+	position: relative;
+	text-decoration: none;
+	margin: 0 auto 1.1rem;
+	padding: 0;
+	width: 250px
+}
+#nav__inner  a:hover {
+  color: #73889d;
+}
+
+#nav__inner li {
+
+	margin: 0;
+	float: left;
+	font-size: .84em;
+}
+
+#nav__inner li:first-child {
+	display: inline-block;
+	margin: 0 1.5rem 0 0;
+	position: relative;
+	top: -5px;
+}
+#nav__inner #headerBullet {
+	display: block;
+	margin-left: 0;
+	margin-top: 0;
+	text-align: center;
+	width: 100%;
+}
+
+#nav__inner h1 {
+	margin-bottom: 0;
+	letter-spacing: .5rem;
+	font-size: 2.5rem;
+	margin-top: 1rem;
+}
+
+
+
+#nav__inner ul {
+	margin-bottom: 0em;
+	margin-top: .3rem;
+	list-style: none;
+}
+
+#nav__inner #btnMenu {
+	position: fixed;
+	right: 15px;
+}
+
+.menuHide {
+	display: none;
+	width: 100%;
+}
+.hidden {
+	transition: all 0.5s ease-in-out 0s;
+	display: block;
+}
+.menuSmall {
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+#logoHeader {
+	float: left;
+	margin: auto;
+	height: 45px;
+	width: auto;
+	position: fixed;
+	left: 15px;
+
+}
+
+#logoHeader path {
+	stroke: #000;
+}
+
+/* LANDING */
+#summary {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url('../images/yogahandsComp.jpg');
+	background-position: center right;
+	background-size: cover;
+	color: #FFF;
+
+}
+
+#quote__container {
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+	font-size: .7em;
+}
+
+.quote {
+	text-align: right;
+	color: white;
+	font-size: 2.25em;
+}
+.quoteAuthor {
+	margin-right: 4rem;
+}
+
+.quote span {
+	font-size: 1.35em;
+}
+
+/* EMAIL */
+#form input {
+	background: none;
+	color: #FFF;
+	border-color: #73889d;
+}
+#form input:focus {
+	border-color: #FFF;
+}
+
+#emailList h5 {
+	margin: 0;
+}
+
+label {
+		font-size: .7em;
+	}
+
+
+/* CALENDAR */
+
+.calendar {
+	border: 4px solid #73889d;
+}
+
+.clndr {
+	width: 100%;
+	text-align: center;
+}
+
+.clndr-previous-button, .month, .clndr-next-button, .day-header, .day {
+	display: inline-block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clndr-previous-button, .clndr-next-button {
+	width: 10%;
+	cursor: pointer;
+	color: #73889d;
+}
+
+.month {
+	width: 80%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.adjacent-month {
+	color: #ddd;
+}
+
+.day {
+	width: 14.28%;
+	padding: 4%;
+	color: #bbb;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.day-header {
+	width: 14.28%;
+}
+
+.days-container hr {
+	margin: 0;
+}
+
+.event {
+	color: #000;
+	cursor: pointer;
+}
+
+.past {
+	color: #ddd;
+}
+
+.adjacent-month {
+	color: #ddd;
+}
+.today {
+	background-color: #aaa;
+	color: #FFF;
+}
+.active {
+	background-color: #73889d;
+	color: #FFF;
+}
+
+#eventList {
+	height: 355px;
+	overflow: auto;
+}
+#eventList::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+#eventList::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+
+
+/* WHAT TO EXPECT */
+#w2e {
+	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('../images/studioComp.jpg');
+	background-position: bottom;
+	background-size: cover;
+}
+
+/* INSTRUCTORS */
+
+#instructors ul {
+	list-style: none;
+}
+
+#instructors li {
+		cursor: pointer;
+		font-size: 1.25em;
+		padding-left: 2rem;
+		margin-bottom: 0;
+}
+
+#instructors li.active {
+	background-color: #73889d;
+	color: white;
+}
+
+.instructor {
+	display: none;
+}
+
+.instructor img {
+	border-radius: 1000px;
+	float: left;
+	margin-right: 3rem;
+	max-height: 200px;
+	max-width: 200px;
+}
+
+/* RESPONSIVE */
+
+
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	#nav__inner #headerBullet {
+	display: inline-block;
+	margin-left: 0;
+	margin-top: 0;
+	width: auto;
+	}
+	#nav__inner h1 {
+		margin-top: .5rem;
+	}
+	.menuHide {
+		display: inline-block;
+		width: inherit;
+	}
+	.menuSmall {
+		display: none;
+	}
+	#logoHeader {
+	float: left;
+	margin: auto;
+	width: auto;
+	position: static;
+	}
+	#nav__inner ul {
+	margin-bottom: 1em;
+	margin-top: 0rem;
+	}
+	#nav__inner .on {
+	color: #73889d;
+	}
+
+	#nav__inner a {
+	color: #000;
+	position: relative;
+	text-decoration: none;
+	padding: 0;
+	}
+	#nav__inner #headerBullet a {
+	margin: 0;
+	width: 100%;
+	}
+	#nav__inner  a:hover {
+	  color: #73889d;
+	}
+
+	#nav__inner li {
+		margin-left: 2%;
+		float: left;
+		margin-top: 1.1rem;
+		font-size: .84em;
+	}
+
+	#nav__inner li:first-child {
+		padding: 0;
+		display: inline-block;
+		margin: 0 1.5rem 0 0;
+		position: relative;
+		top: -5px;
+	}
+
+	#nav__inner  a:before {
+	  content: "";
+	  position: absolute;
+	  width: 100%;
+	  height: 2px;
+	  bottom: 0;
+	  left: 0;
+	  background-color: #73889d;
+	  visibility: hidden;
+	  -webkit-transform: scaleX(0);
+	  transform: scaleX(0);
+	  -webkit-transition: all 0.1s ease-in-out 0s;
+	  transition: all 0.1s ease-in-out 0s;
+	}
+
+	#nav__inner a:hover:before {
+	  visibility: visible;
+	  -webkit-transform: scaleX(1);
+	  transform: scaleX(1);
+	}
+
+	#quote__container {
+	margin-top: 35vh;
+	margin-bottom: 15vh;
+	font-size: 1em;
+	}
+	label {
+		font-size: 1em;
+	}
+
+	.page-full {
+	min-height: 100vh;
+	}
+}
+
+@media (min-width: 940px) {
+	#nav__inner h1 {
+		margin-bottom: 0;
+		letter-spacing: 1rem;
+		font-size: 4rem;
+		margin-top: 0;
+	}
+	#logoHeader {
+	float: left;
+	margin: auto;
+	height: 55px;
+	}
+
+	#nav__inner li {
+		margin-top: 1.5rem;
+	}
+}
